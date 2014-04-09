@@ -1,16 +1,20 @@
 extends skeleton
 
 block body
-	nav.top-bar-section.hide-for-small
-		ul.right
-			li
-				a(href='#main-title') Face2Face
-			li
-				a(href='#process-title') Our Process
-			li
-				a(href='#candidate-section') Info for Candidates
-			li
-				a(href='#client-section') Info for Clients
+	nav.top-bar.hide-for-small(data-topbar)
+		ul.title-area
+			li.name
+				h1: a(href='#') Face2Face
+			li.toggle-topbar.menu-icon: a(href='#') Menu
+
+		section.top-bar-section
+			ul.right
+				li
+					a(href='#process-title') Our Process
+				li
+					a(href='#candidate-section') Info for Candidates
+				li
+					a(href='#client-section') Info for Clients
 	#main-title.row.section-row
 		.row
 			.small-4.columns.small-centered.section-title

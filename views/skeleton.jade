@@ -5,9 +5,15 @@ html
 		title Face2Face
 		link(rel='stylesheet' type='tex/css' href='/css/foundation.css')
 		link(rel='stylesheet' type='tex/css' href='/css/style.css')
-		script(type='text/javascript' src='/js/jquery-1.11.0.min.js')
+		script(type='text/javascript' src='/js/foundation.js')
 		script(type='text/javascript' src='/js/script.js')
 		block scripts
 
 	body
 		block body
+
+		script(type='text/javascript' src='/js/vendor/jquery.js')
+		script(type='text/javascript' src='/js/vendor/fastclick.js')
+		script(type='text/javascript' src='/js/foundation.js')
+		script
+			$(document).foundation();

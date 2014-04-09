@@ -5,17 +5,24 @@
     <title>Face2Face</title>
     <link rel="stylesheet" type="tex/css" href="/css/foundation.css">
     <link rel="stylesheet" type="tex/css" href="/css/style.css">
-    <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/js/foundation.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
   </head>
   <body>
-    <nav class="top-bar-section hide-for-small">
-      <ul class="right">
-        <li><a href="#main-title">Face2Face</a></li>
-        <li><a href="#process-title">Our Process</a></li>
-        <li><a href="#candidate-section">Info for Candidates</a></li>
-        <li><a href="#client-section">Info for Clients</a></li>
+    <nav data-topbar class="top-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Face2Face</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
       </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="#process-title">Our Process</a></li>
+          <li><a href="#candidate-section">Info for Candidates</a></li>
+          <li><a href="#client-section">Info for Clients</a></li>
+        </ul>
+      </section>
     </nav>
     <div id="main-title" class="row section-row">
       <div class="row">
@@ -60,5 +67,9 @@
         <div class="small-6 large-6 columns">Text here too</div>
       </div>
     </div>
+    <script type="text/javascript" src="/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="/js/vendor/fastclick.js"></script>
+    <script type="text/javascript" src="/js/foundation.js"></script>
+    <script>$(document).foundation();</script>
   </body>
 </html>
