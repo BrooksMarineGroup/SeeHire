@@ -1,10 +1,7 @@
 $(function() {
 	$('a').click(function() {
-		// console.log("Yay");
 		$('html body').animate({
-			scrollTop: $( this.hash ).offset().top
+			scrollTop: $( this.hash ).offset().top - 50
 		}, 500);
-
-		return false;
 	});
 });
