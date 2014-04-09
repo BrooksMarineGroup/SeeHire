@@ -1,17 +1,47 @@
 extends skeleton
 
 block body
-	.row
-		.small-3.columns.small-centered
-			h1 Face2Face
-	.row
-		.small-3.columns.small-centered
-			h1 Process
+	nav.top-bar-section.hide-for-small
+		ul.right
+			li
+				a(href='#main-title') Face2Face
+			li
+				a(href='#process-title') Our Process
+			li
+				a(href='#candidate-section') Info for Candidates
+			li
+				a(href='#client-section') Info for Clients
+	#main-title.row.section-row
 		.row
-
-	.row
-		.small-12.columns
-			h1 Candidates
-	.row
-		.small-12.columns
-			h1 Clients
+			.small-4.columns.small-centered.section-title
+				h1 Face2Face
+		.row
+			.small-12.columns
+				|Video here
+	#process-title.row.section-row
+		.row
+			.small-4.columns.small-centered.section-title
+				h1 Process
+		.row
+			.small-6.columns
+				|Text here
+			.small-6.columns
+				|Text here too
+	#candidate-section.row.section-row
+		.row
+			.small-4.columns.small-centered.section-title
+				h1 For candidates
+		.row
+			.small-6.columns
+				|Text here
+			.small-6.columns
+				|Text here too
+	#client-section.row.section-row
+		.row
+			.small-4.columns.small-centered.section-title
+				h1 For clients
+		.row
+			.small-6.large-6.columns
+				|Text here
+			.small-6.large-6.columns
+				|Text here too
